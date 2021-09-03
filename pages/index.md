@@ -1,6 +1,6 @@
 # Research Methodology for Technology
 
-:Abstract: The scientific method ensures the quality of knowledge acquired in research and is the basis for the natural sciences that explore the world.
+:abstract: The scientific method ensures the quality of knowledge acquired in research and is the basis for the natural sciences that explore the world.
 Technology involves research that aims to create artifacts that solve
 or improve a specific problem in the world, and which try to change it.
 The goal of this seminar is to provide an overview of the most important
@@ -45,7 +45,7 @@ produce results.
 
 ## Learning Plan
 
-This seminar is organized as three parts, following the method of
+This seminar is divided in three parts, following the method of
 team-based learning that you may already be familiar with.
 
 1.  This introduction is part of the preparation that you need to go
