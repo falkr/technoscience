@@ -1,3 +1,3 @@
-# Design Science Seminar
+# Seminar on Research Methodology for Technology
 
-[Design Science Seminar](https://falkr.github.io/designscience/index.html)
+[Material](https://falkr.github.io/technoscience/)
