@@ -1,4 +1,4 @@
-# Research Methods for Technology
+# Research Methodology for Technology
 
 :Abstract: The scientific method ensures the quality of knowledge acquired in research and is the basis for the natural sciences that explore the world.
 Technology involves research that aims to create artifacts that solve
