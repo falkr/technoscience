@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="909.5 224 582 295.5" width="582" height="295.5">
+  <defs>
+    <font-face font-family="Calibri" font-size="16" panose-1="2 15 5 2 2 2 4 3 2 4" units-per-em="1000" underline-position="-113.28125" underline-thickness="65.42969" slope="0" x-height="464.35547" cap-height="631.8359" ascent="952.1484" descent="-268.5547" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Calibri"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Calibri" font-size="18" panose-1="2 15 7 2 3 4 4 3 2 4" units-per-em="1000" underline-position="-113.28125" underline-thickness="65.42969" slope="0" x-height="468.75" cap-height="631.8359" ascent="952.1484" descent="-268.5547" font-weight="700">
+      <font-face-src>
+        <font-face-name name="Calibri-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.9.4 
+    <dc:date>2018-09-07 12:03:48 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" stroke-opacity="1" stroke="none" fill="none" fill-opacity="1" stroke-dasharray="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Graphic_3">
+        <text transform="translate(1153.5 230)" fill="black">
+          <tspan font-family="Calibri" font-size="16" font-weight="400" fill="black" x=".25390625" y="15">What you do</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <text transform="translate(1368.5 450.5)" fill="black">
+          <tspan font-family="Calibri" font-size="16" font-weight="400" fill="black" x=".125" y="15">What you find out</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <text transform="translate(914.5 441)" fill="black">
+          <tspan font-family="Calibri" font-size="16" font-weight="400" fill="black" x="6.2578125" y="15">What you write</tspan>
+          <tspan font-family="Calibri" font-size="16" font-weight="400" fill="black" x=".23046875" y="34">(and others read)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <circle cx="1195.5" cy="314" r="60.0000958741137" fill="#ff365e"/>
+        <text transform="translate(1152.5 303)" fill="white">
+          <tspan font-family="Calibri" font-size="18" font-weight="700" fill="white" x="24.01123" y="17">work</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <circle cx="1288" cy="459.5" r="60.0000958741138" fill="#ff365e"/>
+        <text transform="translate(1245 437.5)" fill="white">
+          <tspan font-family="Calibri" font-size="18" font-weight="700" fill="white" x="26.97754" y="17">new </tspan>
+          <tspan font-family="Calibri" font-size="18" font-weight="700" fill="white" x="2.0517578" y="39">knowledge</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <circle cx="1110.5" cy="459.5" r="60.0000958741137" fill="#ff365e"/>
+        <text transform="translate(1067.5 448.5)" fill="white">
+          <tspan font-family="Calibri" font-size="18" font-weight="700" fill="white" x="19.38379" y="17">report</tspan>
+        </text>
+      </g>
+      <g id="Line_9">
+        <line x1="1227.6969" y1="364.64483" x2="1255.8031" y2="408.85517" stroke="#ff365e" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
+      </g>
+      <g id="Line_10">
+        <line x1="1228" y1="459.5" x2="1170.5" y2="459.5" stroke="#ff365e" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
+      </g>
+      <g id="Line_11">
+        <line x1="1140.7729" y1="407.68" x2="1165.2271" y2="365.82" stroke="#ff365e" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
+      </g>
+    </g>
+  </g>
+</svg>
