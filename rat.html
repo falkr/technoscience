@@ -23,60 +23,66 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
 <link rel="stylesheet" type="text/css" href="assets/style.css" />
-<style type="text/css">div.rat ol {
-  list-style-type: upper-alpha;
+<style type="text/css">div.definition p {
+    padding: 10px;
+    background-color: #d9eaf2;
+    border-radius: 5px;
+    border-left: 6px solid #1481b8;
+    font: normal 14px "Source Sans Pro", Menlo, Consolas, Monaco, monospace;
+}
+
+div.definition p::before { 
+  content: "Definition: ";
+  font-weight: bold;
+  display: inline;
 }
 div.abstract {
   font-weight: bold;
   font-style: italic;
 }
-a.ntnu-button {
-    font: 600 14px "Source Sans Pro", Georgia, serif;
-    background: #fff;
-    color: #00509e;
-    border: 1px solid #00509e;
-    border-color: #00509e !important
-    border-style: solid !important;
-    border-radius: 10rem;
-    display: inline-block;
-    padding: 5px 15px;
-    height: auto;
-    font-weight: bold;
-    line-height: 1.5em;
-    text-align: center;
-    vertical-align: top;
-    cursor: pointer;
-    text-decoration: none
+
+div.figure {
+  padding: 20px 0 20px 0;
+  width: 100%;
 }
 
-a.ntnu-button:hover {
-    background: #00509e;
-    color: #fff;
-    text-decoration: none
+div.figurefullwitdth {
+  padding: 20px 0 20px 0;
+  margin-left: -33px;
+  margin-right: -33px;
+  width: 100%;
 }
-div.goals ul,
-div.goals ul li {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-div.goals ul {
-  margin: 2em 0;
+div.task p {
+padding: 10px;
+background-color: #D6E5F0;
+border-radius: 5px;
+border-left: 6px solid #1481b8 
 }
 
-div.goals ul li {
-  margin: 1em;
-  margin-left: 3em;
+div.task p::before { 
+content: "Task: ";
+font-weight: bold;
+display: inline;
+}
+div.guideline p {
+  padding: 10px;
+  background-color: #fae7e8;
+  border-radius: 5px;
+  border-left: 6px solid #e45460;
+  font: normal 14px "Source Sans Pro", Menlo, Consolas, Monaco, monospace;
 }
 
-div.goals ul li:before {
-  content: '\f26a';
-  font-family: bootstrap-icons !important;
-  font-size:20;
-  float: left;
-  margin-left: -1.5em;
-  color: #1481b8;
+div.guideline p::before { 
+  content: "Guideline: ";
+  font-weight: bold;
+  display: inline;
+}
+.double {
+  column-count: 2;
+}
+
+div.rat ol {
+  list-style-type: upper-alpha;
 }
 </style>
 <!--<script src="jquery-1.10.1.min.js"></script>-->
@@ -117,39 +123,39 @@ div.goals ul li:before {
 <div class="page">
     <section class="content">
 <h2 id="question-1">Question 1</h2>
-<div class="rat"><p>Which of the following is the best definition of design science?</p>
+<div class="rat"><p>Which of the following is the best definition of a research methodology for technology?</p>
 <ol type="1">
-<li>Design science is a scientific method for engineers.</li>
-<li>Design science is the design and investigation of artifacts in context.</li>
-<li>Design science is the design and investigation of interactions between artifacts and their context.</li>
-<li>Design science is the scientific investigation of anything designed by humans.</li>
+<li>The scientific investigation of anything designed by humans.</li>
+<li>A scientific method for engineers.</li>
+<li>The design and investigation of artifacts in context.</li>
+<li>The design and investigation of interactions between artifacts and their context.</li>
 </ol>
 <h2 id="question-2">Question 2</h2></div>
-<div class="rat"><p>What is a difference between the natural science and design science?</p>
+<div class="rat"><p>What is a difference between natural science and research within technology?</p>
 <ol type="1">
-<li>Design science is for engineers, natural science for scientists.</li>
 <li>Natural science does not cover implementation.</li>
-<li>Design science explores technology as if it was a natural phenomena.</li>
-<li>Design science aims to change the world, natural science tries to understand it.</li>
+<li>Scientific research explores technology as if it was a natural phenomena.</li>
+<li>Technology aims to change the world, natural science tries to understand it.</li>
+<li>Technology is for engineers, natural science for scientists.</li>
 </ol>
 <h2 id="question-3">Question 3</h2></div>
-<div class="rat"><p>Which of the following is not an artifact as defined by design science?</p>
+<div class="rat"><p>Which of the following is not an artifact as defined in the preparation?</p>
 <ol type="1">
-<li>An electron</li>
-<li>A Python program</li>
 <li>An electric circuit</li>
 <li>A standard for electromagnetic protection of electronic circuits</li>
+<li>An electron</li>
+<li>A Python program</li>
 </ol>
 <h2 id="question-4">Question 4</h2></div>
 <div class="rat"><p>What is the difference between the engineering cycle and the design cycle?</p>
 <ol type="1">
+<li>The design cycle extends the engineering cycle.</li>
 <li>The engineering cycle also includes the actual implementation of the artifact in the real world.</li>
 <li>The engineering cycle has the same steps as the design cycle, but with less scientific rigor.</li>
 <li>The design cycle aims at evaluating an artifact in context.</li>
-<li>The design cycle extends the engineering cycle.</li>
 </ol>
 <h2 id="question-5">Question 5</h2></div>
-<div class="rat"><p>In the framework of design science, what is another term for <em>treatment</em>?</p>
+<div class="rat"><p>What is another term for <em>treatment</em>?</p>
 <ol type="1">
 <li>result</li>
 <li>system implementation</li>
@@ -157,19 +163,19 @@ div.goals ul li:before {
 <li>artifact</li>
 </ol>
 <h2 id="question-6">Question 6</h2></div>
-<div class="rat"><p>What is the difference between <strong>evaluation</strong> and <strong>validation</strong>?</p>
+<div class="rat"><p>What is the difference between <em>evaluation</em> and <em>validation</em>?</p>
 <ol type="1">
-<li>They only differ in extend and effort spent. Evaluation is more elaborate than validation.</li>
-<li>Evaluation requires that we observe the artifact in its real-world context, the validation does not.</li>
 <li>Evaluation is the design-science equivalent to what validation is in natural science.</li>
 <li>Evaluation includes the implementation phase, validation does not.</li>
+<li>They only differ in extend and effort spent. Evaluation is more elaborate than validation.</li>
+<li>Evaluation requires that we observe the artifact in its real-world context, the validation does not.</li>
 </ol>
 <h2 id="question-7">Question 7</h2></div>
 <div class="rat"><ol type="1">
-<li>Design problems have a single artifact as result.</li>
-<li>Design problems are evaluated by truth.</li>
 <li>Knowledge questions are evaluated by the utility to the stakeholder.</li>
 <li>Knowledge questions have a single answer.</li>
+<li>Design problems have a single artifact as result.</li>
+<li>Design problems are evaluated by truth.</li>
 </ol></div>
     </section>
 </div>
