@@ -23,18 +23,34 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
 <link rel="stylesheet" type="text/css" href="assets/style.css" />
-<style type="text/css">div.guideline p {
-  padding: 10px;
-  background-color: #fae7e8;
-  border-radius: 5px;
-  border-left: 6px solid #e45460;
-  font: normal 14px "Source Sans Pro", Menlo, Consolas, Monaco, monospace;
+<style type="text/css">div.abstract {
+  font-weight: bold;
+  font-style: italic;
 }
 
-div.guideline p::before { 
-  content: "Guideline: ";
+div.definition p {
+    padding: 10px;
+    background-color: #d9eaf2;
+    border-radius: 5px;
+    border-left: 6px solid #1481b8;
+    font: normal 14px "Source Sans Pro", Menlo, Consolas, Monaco, monospace;
+}
+
+div.definition p::before { 
+  content: "Definition: ";
   font-weight: bold;
   display: inline;
+}
+div.figure {
+  padding: 20px 0 20px 0;
+  width: 100%;
+}
+
+div.figurefullwitdth {
+  padding: 20px 0 20px 0;
+  margin-left: -33px;
+  margin-right: -33px;
+  width: 100%;
 }
 
 div.task p {
@@ -49,33 +65,21 @@ content: "Task: ";
 font-weight: bold;
 display: inline;
 }
-div.definition p {
-    padding: 10px;
-    background-color: #d9eaf2;
-    border-radius: 5px;
-    border-left: 6px solid #1481b8;
-    font: normal 14px "Source Sans Pro", Menlo, Consolas, Monaco, monospace;
+div.guideline p {
+  padding: 10px;
+  background-color: #fae7e8;
+  border-radius: 5px;
+  border-left: 6px solid #e45460;
+  font: normal 14px "Source Sans Pro", Menlo, Consolas, Monaco, monospace;
 }
 
-div.definition p::before { 
-  content: "Definition: ";
+div.guideline p::before { 
+  content: "Guideline: ";
   font-weight: bold;
   display: inline;
 }
-
 .double {
   column-count: 2;
-}
-div.figure {
-  padding: 20px 0 20px 0;
-  width: 100%;
-}
-
-div.figurefullwitdth {
-  padding: 20px 0 20px 0;
-  margin-left: -33px;
-  margin-right: -33px;
-  width: 100%;
 }
 </style>
 <!--<script src="jquery-1.10.1.min.js"></script>-->
