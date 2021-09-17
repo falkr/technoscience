@@ -23,9 +23,32 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
 <link rel="stylesheet" type="text/css" href="assets/style.css" />
-<style type="text/css">div.abstract {
-  font-weight: bold;
-  font-style: italic;
+<style type="text/css">div.figure {
+  padding: 20px 0 20px 0;
+  width: 100%;
+}
+
+div.figurefullwitdth {
+  padding: 20px 0 20px 0;
+  margin-left: -33px;
+  margin-right: -33px;
+  width: 100%;
+}
+
+div.task p {
+padding: 10px;
+background-color: #D6E5F0;
+border-radius: 5px;
+border-left: 6px solid #1481b8 
+}
+
+div.task p::before { 
+content: "Task: ";
+font-weight: bold;
+display: inline;
+}
+.double {
+  column-count: 2;
 }
 div.goals ul,
 div.goals ul li {
@@ -51,23 +74,6 @@ div.goals ul li:before {
   margin-left: -1.5em;
   color: #1481b8;
 }
-
-div.rat ol {
-  list-style-type: upper-alpha;
-}
-div.definition p {
-    padding: 10px;
-    background-color: #d9eaf2;
-    border-radius: 5px;
-    border-left: 6px solid #1481b8;
-    font: normal 14px "Source Sans Pro", Menlo, Consolas, Monaco, monospace;
-}
-
-div.definition p::before { 
-  content: "Definition: ";
-  font-weight: bold;
-  display: inline;
-}
 a.ntnu-button {
     font: 600 14px "Source Sans Pro", Georgia, serif;
     background: #fff;
@@ -92,29 +98,26 @@ a.ntnu-button:hover {
     color: #fff;
     text-decoration: none
 }
-div.figure {
-  padding: 20px 0 20px 0;
-  width: 100%;
+div.abstract {
+  font-weight: bold;
+  font-style: italic;
 }
 
-div.figurefullwitdth {
-  padding: 20px 0 20px 0;
-  margin-left: -33px;
-  margin-right: -33px;
-  width: 100%;
+div.rat ol {
+  list-style-type: upper-alpha;
+}
+div.definition p {
+    padding: 10px;
+    background-color: #d9eaf2;
+    border-radius: 5px;
+    border-left: 6px solid #1481b8;
+    font: normal 14px "Source Sans Pro", Menlo, Consolas, Monaco, monospace;
 }
 
-div.task p {
-padding: 10px;
-background-color: #D6E5F0;
-border-radius: 5px;
-border-left: 6px solid #1481b8 
-}
-
-div.task p::before { 
-content: "Task: ";
-font-weight: bold;
-display: inline;
+div.definition p::before { 
+  content: "Definition: ";
+  font-weight: bold;
+  display: inline;
 }
 div.guideline p {
   padding: 10px;
@@ -128,9 +131,6 @@ div.guideline p::before {
   content: "Guideline: ";
   font-weight: bold;
   display: inline;
-}
-.double {
-  column-count: 2;
 }
 </style>
 <!--<script src="jquery-1.10.1.min.js"></script>-->

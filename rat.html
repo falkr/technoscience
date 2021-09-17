@@ -23,28 +23,7 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
 <link rel="stylesheet" type="text/css" href="assets/style.css" />
-<style type="text/css">div.abstract {
-  font-weight: bold;
-  font-style: italic;
-}
-
-div.rat ol {
-  list-style-type: upper-alpha;
-}
-div.definition p {
-    padding: 10px;
-    background-color: #d9eaf2;
-    border-radius: 5px;
-    border-left: 6px solid #1481b8;
-    font: normal 14px "Source Sans Pro", Menlo, Consolas, Monaco, monospace;
-}
-
-div.definition p::before { 
-  content: "Definition: ";
-  font-weight: bold;
-  display: inline;
-}
-div.figure {
+<style type="text/css">div.figure {
   padding: 20px 0 20px 0;
   width: 100%;
 }
@@ -68,6 +47,30 @@ content: "Task: ";
 font-weight: bold;
 display: inline;
 }
+.double {
+  column-count: 2;
+}
+div.abstract {
+  font-weight: bold;
+  font-style: italic;
+}
+
+div.rat ol {
+  list-style-type: upper-alpha;
+}
+div.definition p {
+    padding: 10px;
+    background-color: #d9eaf2;
+    border-radius: 5px;
+    border-left: 6px solid #1481b8;
+    font: normal 14px "Source Sans Pro", Menlo, Consolas, Monaco, monospace;
+}
+
+div.definition p::before { 
+  content: "Definition: ";
+  font-weight: bold;
+  display: inline;
+}
 div.guideline p {
   padding: 10px;
   background-color: #fae7e8;
@@ -80,9 +83,6 @@ div.guideline p::before {
   content: "Guideline: ";
   font-weight: bold;
   display: inline;
-}
-.double {
-  column-count: 2;
 }
 </style>
 <!--<script src="jquery-1.10.1.min.js"></script>-->
@@ -171,7 +171,7 @@ div.guideline p::before {
 <li>Evaluation requires that we observe the artifact in its real-world context, the validation does not.</li>
 </ol>
 <h2 id="question-7">Question 7</h2></div>
-		   <div class="rat"><p>What are differences between knowledge questions and design problems?</p><ol type="1">
+<div class="rat"><ol type="1">
 <li>Knowledge questions are evaluated by the utility to the stakeholder.</li>
 <li>Knowledge questions have a single answer.</li>
 <li>Design problems have a single artifact as result.</li>
