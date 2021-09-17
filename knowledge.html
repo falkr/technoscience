@@ -23,7 +23,15 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
 <link rel="stylesheet" type="text/css" href="assets/style.css" />
-<style type="text/css">div.definition p {
+<style type="text/css">div.abstract {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.double {
+  column-count: 2;
+}
+div.definition p {
     padding: 10px;
     background-color: #d9eaf2;
     border-radius: 5px;
@@ -33,19 +41,6 @@
 
 div.definition p::before { 
   content: "Definition: ";
-  font-weight: bold;
-  display: inline;
-}
-div.guideline p {
-  padding: 10px;
-  background-color: #fae7e8;
-  border-radius: 5px;
-  border-left: 6px solid #e45460;
-  font: normal 14px "Source Sans Pro", Menlo, Consolas, Monaco, monospace;
-}
-
-div.guideline p::before { 
-  content: "Guideline: ";
   font-weight: bold;
   display: inline;
 }
@@ -73,10 +68,19 @@ content: "Task: ";
 font-weight: bold;
 display: inline;
 }
-.double {
-  column-count: 2;
+div.guideline p {
+  padding: 10px;
+  background-color: #fae7e8;
+  border-radius: 5px;
+  border-left: 6px solid #e45460;
+  font: normal 14px "Source Sans Pro", Menlo, Consolas, Monaco, monospace;
 }
 
+div.guideline p::before { 
+  content: "Guideline: ";
+  font-weight: bold;
+  display: inline;
+}
 </style>
 <!--<script src="jquery-1.10.1.min.js"></script>-->
 <script src="assets/script-aside.js"></script>
