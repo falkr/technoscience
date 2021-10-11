@@ -3,7 +3,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-<title>Design Science Seminar</title>
+<title>Research Method Seminar</title>
 <meta property="og:title" content="Design Science Seminar">
 <meta property="og:locale" content="en_US">
 <meta name="description" content="Design Science Seminar">
@@ -23,18 +23,22 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
 <link rel="stylesheet" type="text/css" href="assets/style.css" />
-<style type="text/css">div.figure {
-  padding: 20px 0 20px 0;
-  width: 100%;
+<style type="text/css">.double {
+  column-count: 2;
+}
+div.guideline p {
+  padding: 10px;
+  background-color: #fae7e8;
+  border-radius: 5px;
+  border-left: 6px solid #e45460;
+  font: normal 14px "Source Sans Pro", Menlo, Consolas, Monaco, monospace;
 }
 
-div.figurefullwitdth {
-  padding: 20px 0 20px 0;
-  margin-left: -33px;
-  margin-right: -33px;
-  width: 100%;
+div.guideline p::before { 
+  content: "Guideline: ";
+  font-weight: bold;
+  display: inline;
 }
-
 div.task p {
 padding: 10px;
 background-color: #D6E5F0;
@@ -47,32 +51,38 @@ content: "Task: ";
 font-weight: bold;
 display: inline;
 }
-.double {
-  column-count: 2;
+div.abstract {
+  font-weight: bold;
+  font-style: italic;
 }
-div.goals ul,
-div.goals ul li {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+div.rat ol {
+  list-style-type: upper-alpha;
 }
-
-div.goals ul {
-  margin: 2em 0;
+div.figure {
+  padding: 20px 0 20px 0;
+  width: 100%;
 }
 
-div.goals ul li {
-  margin: 1em;
-  margin-left: 3em;
+div.figurefullwitdth {
+  padding: 20px 0 20px 0;
+  margin-left: -33px;
+  margin-right: -33px;
+  width: 100%;
 }
 
-div.goals ul li:before {
-  content: '\f26a';
-  font-family: bootstrap-icons !important;
-  font-size:20;
-  float: left;
-  margin-left: -1.5em;
-  color: #1481b8;
+
+div.definition p {
+    padding: 10px;
+    background-color: #d9eaf2;
+    border-radius: 5px;
+    border-left: 6px solid #1481b8;
+    font: normal 14px "Source Sans Pro", Menlo, Consolas, Monaco, monospace;
+}
+
+div.definition p::before { 
+  content: "Definition: ";
+  font-weight: bold;
+  display: inline;
 }
 a.ntnu-button {
     font: 600 14px "Source Sans Pro", Georgia, serif;
@@ -98,39 +108,29 @@ a.ntnu-button:hover {
     color: #fff;
     text-decoration: none
 }
-div.abstract {
-  font-weight: bold;
-  font-style: italic;
+div.goals ul,
+div.goals ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
-div.rat ol {
-  list-style-type: upper-alpha;
-}
-div.definition p {
-    padding: 10px;
-    background-color: #d9eaf2;
-    border-radius: 5px;
-    border-left: 6px solid #1481b8;
-    font: normal 14px "Source Sans Pro", Menlo, Consolas, Monaco, monospace;
+div.goals ul {
+  margin: 2em 0;
 }
 
-div.definition p::before { 
-  content: "Definition: ";
-  font-weight: bold;
-  display: inline;
-}
-div.guideline p {
-  padding: 10px;
-  background-color: #fae7e8;
-  border-radius: 5px;
-  border-left: 6px solid #e45460;
-  font: normal 14px "Source Sans Pro", Menlo, Consolas, Monaco, monospace;
+div.goals ul li {
+  margin: 1em;
+  margin-left: 3em;
 }
 
-div.guideline p::before { 
-  content: "Guideline: ";
-  font-weight: bold;
-  display: inline;
+div.goals ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size:20;
+  float: left;
+  margin-left: -1.5em;
+  color: #1481b8;
 }
 </style>
 <!--<script src="jquery-1.10.1.min.js"></script>-->
