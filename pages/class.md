@@ -43,6 +43,27 @@ source: figures/scaling.png
 caption: "Scaling up means to work under more and more realistic conditions."
 ---
 
+Scaling up happens along two axes:
+
+The x-axis shows here *where* something is studied: 
+
+* We can study a system under *lab conditions*. This implies idealized conditions.
+* We can study a system under *realistic conditions*. These are more realistic than in a lab, but still not the real system.
+* We can study a system under *field conditions*, which correspond to the conditions of a system in practice. 
+
+The y-axis shows *what* is studied:
+
+* We can study *single cases*.
+* We can study (a few) *samples* of cases.
+* We can study the entire population of cases.
+
+In principle, we can move along these axes independently.
+Most likely, you will begin near the origin, that means, study a *single case* under *lab conditions*. 
+Ideally, of course, we would like to test the entire population of our cases, and under *field conditions*.
+But as you can imagine, this may be difficult or impossible. 
+Therefore it is important that you have an intentional approach towards validation, and are aware what you can realistically achieve within the constraints of your thesis.
+You can ask the question; What is the necessary focus I should / need to apply to solve the next important question? Is it sufficient with a lab experiment? Then going to more realistic conditions may not be necessary. Do I need to look at more than one instance/user/artifact/device to answer a question? Then you might have to work on several samples.
+
 
 # Design Cycle and Empirical Cycle
 
