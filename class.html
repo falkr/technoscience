@@ -23,11 +23,25 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
 <link rel="stylesheet" type="text/css" href="assets/style.css" />
-<style type="text/css">
-
-div.abstract {
+<style type="text/css">div.abstract {
   font-weight: bold;
   font-style: italic;
+}
+div.definition p {
+    padding: 10px;
+    background-color: #d9eaf2;
+    border-radius: 5px;
+    border-left: 6px solid #1481b8;
+    font: normal 14px "Source Sans Pro", Menlo, Consolas, Monaco, monospace;
+}
+
+div.definition p::before { 
+  content: "Definition: ";
+  font-weight: bold;
+  display: inline;
+}
+.double {
+  column-count: 2;
 }
 div.figure {
   padding: 20px 0 20px 0;
@@ -40,6 +54,60 @@ div.figurefullwitdth {
   margin-right: -33px;
   width: 100%;
 }
+div.goals ul,
+div.goals ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.goals ul {
+  margin: 2em 0;
+}
+
+div.goals ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.goals ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size:20;
+  float: left;
+  margin-left: -1.5em;
+  color: #1481b8;
+}
+div.guideline p {
+  padding: 10px;
+  background-color: #fae7e8;
+  border-radius: 5px;
+  border-left: 6px solid #e45460;
+  font: normal 14px "Source Sans Pro", Menlo, Consolas, Monaco, monospace;
+}
+
+div.guideline p::before { 
+  content: "Guideline: ";
+  font-weight: bold;
+  display: inline;
+}
+
+div.rat ol {
+  list-style-type: upper-alpha;
+}
+div.task p {
+padding: 10px;
+background-color: #D6E5F0;
+border-radius: 5px;
+border-left: 6px solid #1481b8 
+}
+
+div.task p::before { 
+content: "Task: ";
+font-weight: bold;
+display: inline;
+}
+
 </style>
 <!--<script src="jquery-1.10.1.min.js"></script>-->
 <script src="assets/script-aside.js"></script>
@@ -79,31 +147,48 @@ div.figurefullwitdth {
 <div class="page">
     </section>
     <section class="content">
-<h1 id="class-time">Class Time</h1>
-<div class="abstract"><p>These notes are the backbone of the seminar with exercises and additional material. You are welcome to take a look and read ahead, but not all information is self-contained or complete.</p></div>
+<h1>Class Time</h1>
+
+<div class="abstract"><p>These notes are the backbone of the seminar with exercises and
+additional material. You are welcome to take a look and read ahead,
+but not all information is self-contained or complete.</p>
+</div>
     </section>
     <section class="content">
-<h1 id="activity-1-what-is-knowledge">Activity 1: What is Knowledge?</h1>
-<p><strong>Step 1:</strong> (Individual) Come up with a good definition for what constitutes valuable knowledge:</p>
+<h1>Activity 1: What is Knowledge?</h1>
+<p><strong>Step 1:</strong> (Individual) Come up with a good definition for what
+constitutes valuable knowledge:</p>
+
 <hr class="lines"/>
 <hr class="lines"/>
 <hr class="lines"/>
 <hr class="lines"/>
-<p><strong>Step 2:</strong> (In Team, on the whiteboard.) Discuss your solutions, and merge them together to an improved version that covers the most important aspects.</p>
-<p><strong>Conclusion:</strong> Make notes from the conclusion in class. What constitutes knowledge?</p>
+<p><strong>Step 2:</strong> (In Team, on the whiteboard.) Discuss your solutions, and
+merge them together to an improved version that covers the most
+important aspects.</p>
+<p><strong>Conclusion:</strong> Make notes from the conclusion in class. What
+constitutes knowledge?</p>
+
 <hr class="lines"/>
 <hr class="lines"/>
 <hr class="lines"/>
 <hr class="lines"/>
     </section>
     <section class="content">
-<h1 id="scaling-up-validation">Scaling Up: Validation</h1>
-<p>We have learned that a full evaluation is often not feasible. Instead, a validation tries to <em>“justify that a treatment would contribute to stakeholder goals if implemented”</em> and <em>“The goal of validation is to predict how an artifact will interact with its context, without actually observing an implemented artifact in a real-world context.”</em></p>
-<p>Usually, a validation is done in an lab or under lab conditions, i.e., is not realistic. Therefore the idea of <strong>scaling up</strong> is interesting.</p>
+<h1>Scaling Up: Validation</h1>
+<p>We have learned that a full evaluation is often not feasible. Instead, a
+validation tries to <em>&quot;justify that a treatment would contribute to
+stakeholder goals if implemented&quot;</em> and <em>&quot;The goal of validation is to
+predict how an artifact will interact with its context, without actually
+observing an implemented artifact in a real-world context.&quot;</em></p>
+<p>Usually, a validation is done in an lab or under lab conditions, i.e.,
+is not realistic. Therefore the idea of <strong>scaling up</strong> is interesting.</p>
+
 <div class="figure">
 <img src="figures/scaling.png" alt="Scaling up means to work under more and more realistic conditions." width="100%"/>
 <span name="figures/scaling.png">&nbsp;</span>
-<aside name="figures/scaling.png"><p><p>Scaling up means to work under more and more realistic conditions.</p></p></aside>
+<aside name="figures/scaling.png"><p><p>Scaling up means to work under more and more realistic conditions.</p>
+</p></aside>
 </div>
 <p>Scaling up happens along two axes:</p>
 <p>The x-axis shows here <em>where</em> something is studied:</p>
@@ -118,79 +203,138 @@ div.figurefullwitdth {
 <li>We can study (a few) <em>samples</em> of cases.</li>
 <li>We can study the entire population of cases.</li>
 </ul>
-<p>In principle, we can move along these axes independently. Most likely, you will begin near the origin, that means, study a <em>single case</em> under <em>lab conditions</em>. Ideally, of course, we would like to test the entire population of our cases, and under <em>field conditions</em>. But as you can imagine, this may be difficult or impossible. Therefore it is important that you have an intentional approach towards validation, and are aware what you can realistically achieve within the constraints of your thesis. You can ask the question; What is the necessary focus I should / need to apply to solve the next important question? Is it sufficient with a lab experiment? Then going to more realistic conditions may not be necessary. Do I need to look at more than one instance/user/artifact/device to answer a question? Then you might have to work on several samples.</p>
+<p>In principle, we can move along these axes independently.
+Most likely, you will begin near the origin, that means, study a <em>single case</em> under <em>lab conditions</em>.
+Ideally, of course, we would like to test the entire population of our cases, and under <em>field conditions</em>.
+But as you can imagine, this may be difficult or impossible.
+Therefore it is important that you have an intentional approach towards validation, and are aware what you can realistically achieve within the constraints of your thesis.
+You can ask the question; What is the necessary focus I should / need to apply to solve the next important question? Is it sufficient with a lab experiment? Then going to more realistic conditions may not be necessary. Do I need to look at more than one instance/user/artifact/device to answer a question? Then you might have to work on several samples.</p>
+
     </section>
     <section class="content">
-<h1 id="design-cycle-and-empirical-cycle">Design Cycle and Empirical Cycle</h1>
-<p>The design cycle that we already covered in the preparation is used to solve design problems.</p>
+<h1>Design Cycle and Empirical Cycle</h1>
+<p>The design cycle that we already covered in the preparation is used to
+solve design problems.</p>
+
 <div class="figure">
 <img src="figures/design-cycle.png" alt="The design cycle. Adapted from [@Wieringa:2014]." width="100%"/>
 <span name="figures/design-cycle.png">&nbsp;</span>
-<aside name="figures/design-cycle.png"><p><p>The design cycle. Adapted from <span class="citation" data-cites="Wieringa:2014">[@Wieringa:2014]</span>.</p></p></aside>
+<aside name="figures/design-cycle.png"><p><p>The design cycle. Adapted from [@Wieringa:2014].</p>
+</p></aside>
 </div>
-<p>Analogously, there is a cycle to answer knowledge questions, and it is called the empirical cycle. Since its detailed content is highly dependent on your specific work area, we cannot cover it in detail here in this seminar.</p>
+<p>Analogously, there is a cycle to answer knowledge questions, and it is
+called the empirical cycle. Since its detailed content is highly
+dependent on your specific work area, we cannot cover it in detail here
+in this seminar.</p>
+
 <div class="figure">
 <img src="figures/empirical-cycle.png" alt="The empirical cycle. Adapted from [@Wieringa:2014]." width="100%"/>
 <span name="figures/empirical-cycle.png">&nbsp;</span>
-<aside name="figures/empirical-cycle.png"><p><p>The empirical cycle. Adapted from <span class="citation" data-cites="Wieringa:2014">[@Wieringa:2014]</span>.</p></p></aside>
+<aside name="figures/empirical-cycle.png"><p><p>The empirical cycle. Adapted from [@Wieringa:2014].</p>
+</p></aside>
 </div>
-<p>The illustration below illustrates how design cycle and empirical cycle can fit together in a thesis: The spiral in the center are the iterations of the design cycle. They trigger knowledge questions, for instance to understand the problem context, answer questions about an artifact, or perform a validation. Whenever that happens, the design cycle triggers iterations of empirical cycles. (Don’t take this illustration too literally. It is an illustration, not a fixed instruction.)</p>
+<p>The illustration below illustrates how design cycle and empirical cycle
+can fit together in a thesis: The spiral in the center are the
+iterations of the design cycle. They trigger knowledge questions, for
+instance to understand the problem context, answer questions about an
+artifact, or perform a validation. Whenever that happens, the design
+cycle triggers iterations of empirical cycles. (Don't take this
+illustration too literally. It is an illustration, not a fixed
+instruction.)</p>
+
 <div class="figure">
 <img src="figures/cycles.png" alt="How design cycles and empirical cycles are connected." width="100%"/>
 <span name="figures/cycles.png">&nbsp;</span>
-<aside name="figures/cycles.png"><p><p>How design cycles and empirical cycles are connected.</p></p></aside>
+<aside name="figures/cycles.png"><p><p>How design cycles and empirical cycles are connected.</p>
+</p></aside>
 </div>
-<p><strong>Conclusion:</strong> What should a thesis cover, with regard to design cycles and empirical cycles?</p>
+<p><strong>Conclusion:</strong> What should a thesis cover, with regard to design cycles
+and empirical cycles?</p>
+
 <hr class="lines"/>
 <hr class="lines"/>
 <hr class="lines"/>
 <hr class="lines"/>
     </section>
     <section class="content">
-<h1 id="design-science-for-your-thesis">Design Science for Your Thesis</h1>
-<p>With what you know by now, you should be able to outline the big picture of your thesis with regard to design science. The scheme on the next page should guide you through this process and stimulate important questions you should be aware of.</p>
+<h1>Design Science for Your Thesis</h1>
+<p>With what you know by now, you should be able to outline the big picture
+of your thesis with regard to design science. The scheme on the next
+page should guide you through this process and stimulate important
+questions you should be aware of.</p>
 <p>There are three areas in the scheme:</p>
 <ul>
-<li><p><strong>Social context:</strong> This describes a part of the world as it is, and consists of the stakeholders who want a specific problem solved, and who have specific goals. They may not know the problem and the goal, and it may be part of research to formulate them.</p></li>
-<li><p><strong>Research:</strong> This is the part of the project that you control. It consists of <strong>Design</strong> (the creation of artifacts) and their <strong>Investigation</strong> (answering knowledge questions about the design).</p></li>
-<li><p><strong>Knowledge context:</strong> This is the existing knowledge about the world, including existing designs. Your research will also result in new knowledge and new designs.</p></li>
+<li>
+<p><strong>Social context:</strong> This describes a part of the world as it is, and
+consists of the stakeholders who want a specific problem solved, and
+who have specific goals. They may not know the problem and the goal,
+and it may be part of research to formulate them.</p>
+</li>
+<li>
+<p><strong>Research:</strong> This is the part of the project that you control. It
+consists of <strong>Design</strong> (the creation of artifacts) and their
+<strong>Investigation</strong> (answering knowledge questions about the design).</p>
+</li>
+<li>
+<p><strong>Knowledge context:</strong> This is the existing knowledge about the
+world, including existing designs. Your research will also result in
+new knowledge and new designs.</p>
+</li>
 </ul>
 <p>Instructions:</p>
 <ul>
-<li><p>Think of your master thesis topic, and fill out the different fields (3 in Social Context, 3 in Knowledge Context, 4 in Your Research).</p></li>
-<li><p>Iterate over all of them, fill in the ones you are most confident of first.</p></li>
-<li><p>If you are stuck on one point, move to the next. Try rather to cover the entire diagram than to fine-tune individual points. Try to get the big picture right.</p></li>
+<li>
+<p>Think of your master thesis topic, and fill out the different fields
+(3 in Social Context, 3 in Knowledge Context, 4 in Your Research).</p>
+</li>
+<li>
+<p>Iterate over all of them, fill in the ones you are most confident of
+first.</p>
+</li>
+<li>
+<p>If you are stuck on one point, move to the next. Try rather to cover
+the entire diagram than to fine-tune individual points. Try to get
+the big picture right.</p>
+</li>
 </ul>
+
 <div class="figure">
 <a href="material/design-science-scheme.pdf"><img src="figures/design-science-scheme.png" alt="Worksheet to fill out for your thesis. Click the image for the full-scale PDF." width="100%"/></a>
 <span name="figures/design-science-scheme.png">&nbsp;</span>
-<aside name="figures/design-science-scheme.png"><p><p>Worksheet to fill out for your thesis. Click the image for the full-scale PDF.</p></p></aside>
+<aside name="figures/design-science-scheme.png"><p><p>Worksheet to fill out for your thesis. Click the image for the full-scale PDF.</p>
+</p></aside>
 </div>
 <p><strong>Critique from classmate:</strong></p>
+
 <hr class="lines"/>
 <hr class="lines"/>
 <hr class="lines"/>
 <hr class="lines"/>
 <p><strong>What will I improve? What will I work on?</strong></p>
+
 <hr class="lines"/>
 <hr class="lines"/>
 <hr class="lines"/>
 <hr class="lines"/>
 <p><strong>After the discussion - what is important?</strong></p>
+
 <hr class="lines"/>
 <hr class="lines"/>
 <hr class="lines"/>
 <hr class="lines"/>
     </section>
     <section class="content">
-<h1 id="steps-forward">Steps Forward</h1>
-<p>This seminar is only the beginning of your work with your thesis. You got an introduction to some of the questions and taxonomy so that you are able to start asking the right questions and reading more on methodology. We propose the following steps forward:</p>
+<h1>Steps Forward</h1>
+<p>This seminar is only the beginning of your work with your thesis.
+You got an introduction to some of the questions and taxonomy so that you are able to start asking the right questions and reading more on methodology. We propose the following steps forward:</p>
+
 <div class="figure">
 <img src="figures/process.png" alt="Proposed steps forward from this seminar to your thesis." width="100%"/>
 <span name="figures/process.png">&nbsp;</span>
-<aside name="figures/process.png"><p><p>Proposed steps forward from this seminar to your thesis.</p></p></aside>
+<aside name="figures/process.png"><p><p>Proposed steps forward from this seminar to your thesis.</p>
+</p></aside>
 </div>
-<ol type="1">
+<ol>
 <li>Start thinking about your detailed thesis topic.</li>
 <li>Start thinking about the method you need. (This is where we are now.)</li>
 <li>Apply what you learned about methodology to your specific topic, for instance by filling out the design science scheme from above.</li>
@@ -198,25 +342,61 @@ div.figurefullwitdth {
 <li>While iterating through steps 3 and 4, also start planning for your thesis and write down the plan.</li>
 </ol>
 <p>Do all of this in collaboration with your supervisors, and show them your plan. They may have valuable input, but remember that planning for the thesis is your own responsibility.</p>
-<h2 id="recommended-books">Recommended Books</h2>
+
+<h2>Recommended Books</h2>
 <p>There are two specific books that we recommend for further work.</p>
 <ul>
 <li>Roel Wieringa: <strong>Design Science Methodology</strong>. (English). This book is accessible as PDF when you follow <a href="https://doi.org/10.1007/978-3-662-43839-8">this link to Springer via the campus network</a>.</li>
 <li>Ketil Stølen: <strong>Teknologivitenskap</strong>. (Norwegian). This book is available from <a href="https://www.universitetsforlaget.no/teknologivitenskap">Universitetsforlaget</a>.</li>
 </ul>
+
     </section>
     <section class="content">
-<h1 id="final-tips">Final Tips</h1>
+<h1>Final Tips</h1>
 <ul>
-<li><p>Focus on the thesis on providing valuable knowledge, then design science will fit in as a tool for guiding you.</p></li>
-<li><p>You need to think for yourself. Design science is a framework that provides you guidelines for how to ask relevant questions, but not how to answer them for your specific project. The answer how you should apply to your specific topic is an answer that only you can find.</p></li>
-<li><p>Guidance on methods, experiments, validation and overall scope are valuable discussion subjects for you and your supervisor. Talk with your supervisor about these issues!</p></li>
-<li><p>Read the chapters of the book on design science that are relevant for you.</p></li>
+<li>
+<p>Focus on the thesis on providing valuable knowledge, then design
+science will fit in as a tool for guiding you.</p>
+</li>
+<li>
+<p>You need to think for yourself. Design science is a framework that
+provides you guidelines for how to ask relevant questions, but not
+how to answer them for your specific project.
+The answer how you should apply to your specific topic is an answer that only you can find.</p>
+</li>
+<li>
+<p>Guidance on methods, experiments, validation and overall scope are
+valuable discussion subjects for you and your supervisor. Talk with
+your supervisor about these issues!</p>
+</li>
+<li>
+<p>Read the chapters of the book on design science that are relevant
+for you.</p>
+</li>
 </ul>
+
     </section>
 </div>
 
 
 <footer></footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
+<script>
+    anchors.add('h1').add('h2').add('h3');
+    anchors.options.visible = 'always';
+</script>
+<script>
+  
+
+
+
+
+
+
+
+
+
+
+</script>
 </body>
 </html>

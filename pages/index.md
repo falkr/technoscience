@@ -7,19 +7,6 @@ The goal of this seminar is to provide an overview of the most important
 concepts of research methods for technology for students that start with their thesis, and serve as an introduction for own learning afterwards.
 
 
-## Registration
-
-Time: Thursday, **Sept. 17th 2021 10:15 -- 12:00**
-
-Place: Zoom, maybe hybrid
-
----
-type: button
-url: https://forms.office.com/Pages/ResponsePage.aspx?id=cgahCS-CZ0SluluzdZZ8BSxiepoCd7lKk70IThBWqdJUNU1PNzNEMkZWUEVVSDAyQloxSzdLVUJaVi4u
-text: "Registration"
----
-
-
 
 ## Learning Goals of this Seminar
 

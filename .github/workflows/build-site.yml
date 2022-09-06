@@ -1,3 +1,4 @@
+
 name: Build Supermark Site
 on: [push]
 jobs:
@@ -17,6 +18,12 @@ jobs:
           ln -s $CONDA/bin/pandoc /usr/local/bin/pandoc
       - name: Run Supermark
         run: |
-          supermark build --all --log
+          supermark build --all --log --verbose
+      - name: Get Actions user id
+        id: get_uid
+        run: |
+          actions_user_id=`id -u $USER`
+          echo $actions_user_id
+          echo ::set-output name=uid::$actions_user_id
       - name: Push
-        uses: actions-x/commit@v2
+        uses: actions-x/commit@v6
