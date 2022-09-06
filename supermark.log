@@ -1,0 +1,38 @@
+╭─────────────╮
+│ ☘ Finished. │
+╰─────────────╯
+├── Found extension TreeParagraphExtension
+├── Found extension QuizExtension
+├── Found extension HintExtension
+├── Found extension HintParagraphExtension
+├── Found extension RubricTableClassExtension
+├── Found extension DeliveryParagraphExtension
+├── Found extension DoubleParagraphExtension
+├── Found extension WeekplanTableClassExtension
+├── Found extension ButtonExtension
+├── Found extension TableExtension
+├── Found extension AbstractParagraphExtension
+├── Found extension StepsParagraphExtension
+├── Found extension GoalsParagraphExtension
+├── Found extension TipsParagraphExtension
+├── Found extension CheckParagraphExtension
+├── Found extension TaskParagraphExtension
+├── Found extension RATParagraphExtension
+├── Found extension LinesExtension
+├── Found extension GuidelineParagraphExtension
+├── Found extension WarningParagraphExtension
+├── Found extension DefinitionParagraphExtension
+├── Found extension VideoExtension
+├── Found extension ReportParagraphExtension
+├── Found extension QuoteExtension
+├── Found extension FigureExtension
+├── Found extension FactBoxParagraphExtension
+├── Loading template 
+│   /home/runner/work/technoscience/technoscience/templates/page.html.
+├── Using threadpool.
+└── Translated
+    ├── /home/runner/work/technoscience/technoscience/index.html
+    ├── /home/runner/work/technoscience/technoscience/class.html
+    ├── /home/runner/work/technoscience/technoscience/rat.html
+    ├── /home/runner/work/technoscience/technoscience/knowledge.html
+    └── /home/runner/work/technoscience/technoscience/preparation.html
