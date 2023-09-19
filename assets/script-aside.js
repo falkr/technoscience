@@ -42,29 +42,28 @@ function refreshAsides() {
 }
 
 
+/* for hint2 */
 $(document).ready(function() {
-    var coll = document.getElementsByClassName("w3collapsible");
-    var i;
-    
-    for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("mousedown", function() {
-        var content = this.nextElementSibling;
-        content.style.filter = "none";
-      });
-      coll[i].addEventListener("mouseup", function() {
-        var content = this.nextElementSibling;
-        content.style.filter = "blur(3px)";
-      });
-    }
-
-    //For fancy numbered lists starting at start AKA :steps: 
-    $(".steps ol").each(function(idx, el) {
-        var index = parseInt($(el).attr("start"))-1;
-          if (!isNaN(index)) {
-              $(el).css({'counter-reset':'li ' + index});    
-          }
+  var coll = document.getElementsByClassName("w3collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("mousedown", function() {
+      var content = this.nextElementSibling;
+      content.style.filter = "none";
     });
+    coll[i].addEventListener("mouseup", function() {
+      var content = this.nextElementSibling;
+      content.style.filter = "blur(3px)";
+    });
+  }
+
+  //For fancy numbered lists starting at start AKA :steps: 
+  $(".steps ol").each(function(idx, el) {
+      var index = parseInt($(el).attr("start"))-1;
+        if (!isNaN(index)) {
+            $(el).css({'counter-reset':'li ' + index});    
+        }
+  });
 
 });
-
-

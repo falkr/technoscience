@@ -1,48 +1,33 @@
-<html lang="en-US"><head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!doctype html>
+<html lang="en">
 
-<title>Research Method Seminar</title>
-<meta property="og:title" content="Design Science Seminar">
-<meta property="og:locale" content="en_US">
-<meta name="description" content="Design Science Seminar">
-<meta property="og:description" content="Design Science Seminar">
-
-
-<!--<link rel="stylesheet" type="text/css" href="style.css" />-->
-<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic|Source+Code+Pro|Source+Sans+Pro:200,300,400,600,400italic,600italic|Rock+Salt" rel="stylesheet" type="text/css">
-
-
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-
-<link rel="stylesheet" type="text/css" href="assets/style.css" />
-<style type="text/css">div.abstract {
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="generator" content="">
+  <title>Research Method Seminar</title>
+  <link rel="canonical" href="https://edu.iik.ntnu.no">
+  <!-- Bootstrap core CSS -->
+  <link href="assets/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="assets/style-frame.css" rel="stylesheet">
+  <link href="assets/style-fonts.css" rel="stylesheet">
+  <link href="assets/style-code.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/bootstrap-icons.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="assets/anchor.js"></script>
+  <script src="assets/clipboard.min.js"></script>
+  <style>/* === abstract === */
+div.abstract {
   font-weight: bold;
   font-style: italic;
 }
-div.definition p {
-    padding: 10px;
-    background-color: #d9eaf2;
-    border-radius: 5px;
-    border-left: 6px solid #1481b8;
-    font: normal 14px "Source Sans Pro", Menlo, Consolas, Monaco, monospace;
-}
 
-div.definition p::before { 
-  content: "Definition: ";
-  font-weight: bold;
-  display: inline;
-}
-.double {
-  column-count: 2;
-}
+/* === figure === */
 div.figure {
   padding: 20px 0 20px 0;
   width: 100%;
@@ -54,128 +39,93 @@ div.figurefullwitdth {
   margin-right: -33px;
   width: 100%;
 }
-div.goals ul,
-div.goals ul li {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
 
-div.goals ul {
-  margin: 2em 0;
-}
-
-div.goals ul li {
-  margin: 1em;
-  margin-left: 3em;
-}
-
-div.goals ul li:before {
-  content: '\f26a';
-  font-family: bootstrap-icons !important;
-  font-size:20;
-  float: left;
-  margin-left: -1.5em;
-  color: #1481b8;
-}
-div.guideline p {
-  padding: 10px;
-  background-color: #fae7e8;
-  border-radius: 5px;
-  border-left: 6px solid #e45460;
-  font: normal 14px "Source Sans Pro", Menlo, Consolas, Monaco, monospace;
-}
-
-div.guideline p::before { 
-  content: "Guideline: ";
-  font-weight: bold;
-  display: inline;
-}
-
-div.rat ol {
-  list-style-type: upper-alpha;
-}
-div.task p {
-padding: 10px;
-background-color: #D6E5F0;
-border-radius: 5px;
-border-left: 6px solid #1481b8 
-}
-
-div.task p::before { 
-content: "Task: ";
-font-weight: bold;
-display: inline;
+figcaption {
+  color: #868279;
 }
 
 </style>
-<!--<script src="jquery-1.10.1.min.js"></script>-->
-<script src="assets/script-aside.js"></script>
 </head>
-<body id="top">
 
-<nav class="navbar navbar-expand-md navbar-dark " style="background-color:#666666"#2B65EC"> <!-- fixed-top -->
-	<ul class="nav nav-pills">
-		<li class="nav-item">
-    		<a class="nav-link" href="index.html" style="font-weight: bold">Research Methodology for Technology</a>
-    	</li>
-    	<li class="nav-item">
-    		<a class="nav-link" href="preparation.html">Preparation</a>
-    	</li>
-    	<li class="nav-item">
-    		<a class="nav-link" href="class.html">Class</a>
-    	</li>
-        <!--
-  		<li class="nav-item dropdown">
-    		<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Preparation</a>
-    		<div class="dropdown-menu">
-      			<a class="dropdown-item" href="prep-setup.html">Team Setup</a>
-    		</div>
-  		</li>
-		-->
-	</ul>
-	<div class="navbar-nav flex-row ml-md-auto d-none d-md-flex"></div>
-    <a class="navbar-brand" href="https://ntnu.edu">
-    	<svg width="100" height="30">
-			<image xlink:href="https://innsida.ntnu.no/innsida-theme/images/ntnu-graphics/ntnu_logo_white.svg" 
-      		src="https://innsida.ntnu.no/innsida-theme/images/ntnu-graphics/ntnu_logo_white.png" width="100%" height="100%"></image>
-    	</svg>
-    </a>
-</nav>
+<body>
 
 
-<div class="page">
-    </section>
-    <section class="content">
-<h1>Class Time</h1>
 
-<div class="abstract"><p>These notes are the backbone of the seminar with exercises and
+
+
+  <nav class="navbar navbar-expand-lg navbar shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://ntnu.edu" title="NTNU Homepage">
+        <img id="header_logo" alt="NTNU Hjemmeside" width="120"
+          src="https://www.ntnu.no/o/ntnu-theme/images/logo_ntnu.svg" height="23">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+          </svg>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Research Methodology</a>
+          <li class="nav-item">
+              <a class="nav-link" href="preparation.html">Preparation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="class.html">Class</a>
+            </li>
+        </ul>
+        <div class="bg-light border ms-auto"></div>
+        <div>
+          <a class="nav-link" href="schedule.html"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+              height="16" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+              <path
+                d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" />
+              <path
+                d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+            </svg></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container container-max-width">
+    <section class="mt-5 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>Class Time</h1>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><div class="abstract"><p>These notes are the backbone of the seminar with exercises and
 additional material. You are welcome to take a look and read ahead,
 but not all information is self-contained or complete.</p>
-</div>
-    </section>
-    <section class="content">
-<h1>Activity 1: What is Knowledge?</h1>
+</div></div><aside class="col-md-4 chunk ps-2"></aside></div>
+</section>
+<section class="mt-5 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>Activity 1: What is Knowledge?</h1>
 <p><strong>Step 1:</strong> (Individual) Come up with a good definition for what
 constitutes valuable knowledge:</p>
-
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><hr class="lines"/>
 <hr class="lines"/>
 <hr class="lines"/>
-<hr class="lines"/>
-<hr class="lines"/>
-<p><strong>Step 2:</strong> (In Team, on the whiteboard.) Discuss your solutions, and
+<hr class="lines"/></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p><strong>Step 2:</strong> (In Team, on the whiteboard.) Discuss your solutions, and
 merge them together to an improved version that covers the most
 important aspects.</p>
 <p><strong>Conclusion:</strong> Make notes from the conclusion in class. What
 constitutes knowledge?</p>
-
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><hr class="lines"/>
 <hr class="lines"/>
 <hr class="lines"/>
-<hr class="lines"/>
-<hr class="lines"/>
-    </section>
-    <section class="content">
-<h1>Scaling Up: Validation</h1>
+<hr class="lines"/></div><aside class="col-md-4 chunk ps-2"></aside></div>
+</section>
+<section class="mt-5 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>Scaling Up: Validation</h1>
 <p>We have learned that a full evaluation is often not feasible. Instead, a
 validation tries to <em>&quot;justify that a treatment would contribute to
 stakeholder goals if implemented&quot;</em> and <em>&quot;The goal of validation is to
@@ -183,14 +133,11 @@ predict how an artifact will interact with its context, without actually
 observing an implemented artifact in a real-world context.&quot;</em></p>
 <p>Usually, a validation is done in an lab or under lab conditions, i.e.,
 is not realistic. Therefore the idea of <strong>scaling up</strong> is interesting.</p>
-
-<div class="figure">
-<img src="figures/scaling.png" alt="Scaling up means to work under more and more realistic conditions." width="100%"/>
-<span name="figures/scaling.png">&nbsp;</span>
-<aside name="figures/scaling.png"><p><p>Scaling up means to work under more and more realistic conditions.</p>
-</p></aside>
-</div>
-<p>Scaling up happens along two axes:</p>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
+    <img src="figures/scaling.png" class="figure-img img-fluid rounded" alt="Scaling up means to work under more and more realistic conditions.">
+</figure></div><aside class="col-md-4 chunk ps-2"><figcaption class="figure-caption">Scaling up means to work under more and more realistic conditions.</figcaption></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>Scaling up happens along two axes:</p>
 <p>The x-axis shows here <em>where</em> something is studied:</p>
 <ul>
 <li>We can study a system under <em>lab conditions</em>. This implies idealized conditions.</li>
@@ -209,31 +156,25 @@ Ideally, of course, we would like to test the entire population of our cases, an
 But as you can imagine, this may be difficult or impossible.
 Therefore it is important that you have an intentional approach towards validation, and are aware what you can realistically achieve within the constraints of your thesis.
 You can ask the question; What is the necessary focus I should / need to apply to solve the next important question? Is it sufficient with a lab experiment? Then going to more realistic conditions may not be necessary. Do I need to look at more than one instance/user/artifact/device to answer a question? Then you might have to work on several samples.</p>
-
-    </section>
-    <section class="content">
-<h1>Design Cycle and Empirical Cycle</h1>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+</section>
+<section class="mt-5 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>Design Cycle and Empirical Cycle</h1>
 <p>The design cycle that we already covered in the preparation is used to
 solve design problems.</p>
-
-<div class="figure">
-<img src="figures/design-cycle.png" alt="The design cycle. Adapted from [@Wieringa:2014]." width="100%"/>
-<span name="figures/design-cycle.png">&nbsp;</span>
-<aside name="figures/design-cycle.png"><p><p>The design cycle. Adapted from [@Wieringa:2014].</p>
-</p></aside>
-</div>
-<p>Analogously, there is a cycle to answer knowledge questions, and it is
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
+    <img src="figures/design-cycle.png" class="figure-img img-fluid rounded" alt="The design cycle. Adapted from [@Wieringa:2014].">
+</figure></div><aside class="col-md-4 chunk ps-2"><figcaption class="figure-caption">The design cycle. Adapted from [@Wieringa:2014].</figcaption></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>Analogously, there is a cycle to answer knowledge questions, and it is
 called the empirical cycle. Since its detailed content is highly
 dependent on your specific work area, we cannot cover it in detail here
 in this seminar.</p>
-
-<div class="figure">
-<img src="figures/empirical-cycle.png" alt="The empirical cycle. Adapted from [@Wieringa:2014]." width="100%"/>
-<span name="figures/empirical-cycle.png">&nbsp;</span>
-<aside name="figures/empirical-cycle.png"><p><p>The empirical cycle. Adapted from [@Wieringa:2014].</p>
-</p></aside>
-</div>
-<p>The illustration below illustrates how design cycle and empirical cycle
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
+    <img src="figures/empirical-cycle.png" class="figure-img img-fluid rounded" alt="The empirical cycle. Adapted from [@Wieringa:2014].">
+</figure></div><aside class="col-md-4 chunk ps-2"><figcaption class="figure-caption">The empirical cycle. Adapted from [@Wieringa:2014].</figcaption></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>The illustration below illustrates how design cycle and empirical cycle
 can fit together in a thesis: The spiral in the center are the
 iterations of the design cycle. They trigger knowledge questions, for
 instance to understand the problem context, answer questions about an
@@ -241,23 +182,20 @@ artifact, or perform a validation. Whenever that happens, the design
 cycle triggers iterations of empirical cycles. (Don't take this
 illustration too literally. It is an illustration, not a fixed
 instruction.)</p>
-
-<div class="figure">
-<img src="figures/cycles.png" alt="How design cycles and empirical cycles are connected." width="100%"/>
-<span name="figures/cycles.png">&nbsp;</span>
-<aside name="figures/cycles.png"><p><p>How design cycles and empirical cycles are connected.</p>
-</p></aside>
-</div>
-<p><strong>Conclusion:</strong> What should a thesis cover, with regard to design cycles
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
+    <img src="figures/cycles.png" class="figure-img img-fluid rounded" alt="How design cycles and empirical cycles are connected.">
+</figure></div><aside class="col-md-4 chunk ps-2"><figcaption class="figure-caption">How design cycles and empirical cycles are connected.</figcaption></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p><strong>Conclusion:</strong> What should a thesis cover, with regard to design cycles
 and empirical cycles?</p>
-
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><hr class="lines"/>
 <hr class="lines"/>
 <hr class="lines"/>
-<hr class="lines"/>
-<hr class="lines"/>
-    </section>
-    <section class="content">
-<h1>Design Science for Your Thesis</h1>
+<hr class="lines"/></div><aside class="col-md-4 chunk ps-2"></aside></div>
+</section>
+<section class="mt-5 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>Design Science for Your Thesis</h1>
 <p>With what you know by now, you should be able to outline the big picture
 of your thesis with regard to design science. The scheme on the next
 page should guide you through this process and stimulate important
@@ -297,44 +235,40 @@ the entire diagram than to fine-tune individual points. Try to get
 the big picture right.</p>
 </li>
 </ul>
-
-<div class="figure">
-<a href="material/design-science-scheme.pdf"><img src="figures/design-science-scheme.png" alt="Worksheet to fill out for your thesis. Click the image for the full-scale PDF." width="100%"/></a>
-<span name="figures/design-science-scheme.png">&nbsp;</span>
-<aside name="figures/design-science-scheme.png"><p><p>Worksheet to fill out for your thesis. Click the image for the full-scale PDF.</p>
-</p></aside>
-</div>
-<p><strong>Critique from classmate:</strong></p>
-
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
+  <a href="material/design-science-scheme.pdf">
+    <img src="figures/design-science-scheme.png" class="figure-img img-fluid rounded" alt="Worksheet to fill out for your thesis. Click the image for the full-scale PDF.">
+  </a>
+</figure></div><aside class="col-md-4 chunk ps-2"><figcaption class="figure-caption">Worksheet to fill out for your thesis. Click the image for the full-scale PDF.</figcaption></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p><strong>Critique from classmate:</strong></p>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><hr class="lines"/>
 <hr class="lines"/>
 <hr class="lines"/>
+<hr class="lines"/></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p><strong>What will I improve? What will I work on?</strong></p>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><hr class="lines"/>
 <hr class="lines"/>
 <hr class="lines"/>
-<p><strong>What will I improve? What will I work on?</strong></p>
-
+<hr class="lines"/></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p><strong>After the discussion - what is important?</strong></p>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><hr class="lines"/>
 <hr class="lines"/>
 <hr class="lines"/>
-<hr class="lines"/>
-<hr class="lines"/>
-<p><strong>After the discussion - what is important?</strong></p>
-
-<hr class="lines"/>
-<hr class="lines"/>
-<hr class="lines"/>
-<hr class="lines"/>
-    </section>
-    <section class="content">
-<h1>Steps Forward</h1>
+<hr class="lines"/></div><aside class="col-md-4 chunk ps-2"></aside></div>
+</section>
+<section class="mt-5 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>Steps Forward</h1>
 <p>This seminar is only the beginning of your work with your thesis.
 You got an introduction to some of the questions and taxonomy so that you are able to start asking the right questions and reading more on methodology. We propose the following steps forward:</p>
-
-<div class="figure">
-<img src="figures/process.png" alt="Proposed steps forward from this seminar to your thesis." width="100%"/>
-<span name="figures/process.png">&nbsp;</span>
-<aside name="figures/process.png"><p><p>Proposed steps forward from this seminar to your thesis.</p>
-</p></aside>
-</div>
-<ol>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
+    <img src="figures/process.png" class="figure-img img-fluid rounded" alt="Proposed steps forward from this seminar to your thesis.">
+</figure></div><aside class="col-md-4 chunk ps-2"><figcaption class="figure-caption">Proposed steps forward from this seminar to your thesis.</figcaption></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><ol>
 <li>Start thinking about your detailed thesis topic.</li>
 <li>Start thinking about the method you need. (This is where we are now.)</li>
 <li>Apply what you learned about methodology to your specific topic, for instance by filling out the design science scheme from above.</li>
@@ -342,17 +276,17 @@ You got an introduction to some of the questions and taxonomy so that you are ab
 <li>While iterating through steps 3 and 4, also start planning for your thesis and write down the plan.</li>
 </ol>
 <p>Do all of this in collaboration with your supervisors, and show them your plan. They may have valuable input, but remember that planning for the thesis is your own responsibility.</p>
-
-<h2>Recommended Books</h2>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h2>Recommended Books</h2>
 <p>There are two specific books that we recommend for further work.</p>
 <ul>
 <li>Roel Wieringa: <strong>Design Science Methodology</strong>. (English). This book is accessible as PDF when you follow <a href="https://doi.org/10.1007/978-3-662-43839-8">this link to Springer via the campus network</a>.</li>
 <li>Ketil Stølen: <strong>Teknologivitenskap</strong>. (Norwegian). This book is available from <a href="https://www.universitetsforlaget.no/teknologivitenskap">Universitetsforlaget</a>.</li>
 </ul>
-
-    </section>
-    <section class="content">
-<h1>Final Tips</h1>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+</section>
+<section class="mt-5 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>Final Tips</h1>
 <ul>
 <li>
 <p>Focus on the thesis on providing valuable knowledge, then design
@@ -374,29 +308,67 @@ your supervisor about these issues!</p>
 for you.</p>
 </li>
 </ul>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+</section>
+  </main>
 
-    </section>
-</div>
 
 
-<footer></footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
-<script>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-bottom" style="background-color: #555555">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.ntnu.no/informasjonskapsler">Om informasjonskapsler</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.ntnu.no/personvern">Personvern</a>
+          </li>
+        </ul>
+        <div class="bg-light ms-auto border-0"></div>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+              aria-controls="offcanvasExample">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-pencil-square" viewBox="0 0 16 16">
+                <path
+                  d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                <path fill-rule="evenodd"
+                  d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasExample"
+    aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Edit this page</h5>
+    </div>
+    <div class="offcanvas-body">
+      <ul>
+        <li>This site is hosted on <a href="https://github.com/falkr/ttm4175">Github</a></li>
+        <li>The source is written in <a href="supermark/index.html">Supermark</a> syntax</li>
+        <li>To edit this page, make a commit to <a
+            href="https://github.com/falkr/ttm4175/tree/master/pages/class.md">this file</a></li>
+      </ul>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script>
     anchors.add('h1').add('h2').add('h3');
     anchors.options.visible = 'always';
-</script>
-<script>
-  
-
-
-
-
-
-
-
-
+    var clipboard = new ClipboardJS('.copy-button');
+  </script>
+  <script>
 
 
 </script>
 </body>
+
 </html>

@@ -516,12 +516,19 @@ elaborate further.
 Much of this introduction you just read is based on
 the book of Roel Wieringa, *Design Science Methodology for Information
 Systems and Software Engineering*. You can access this book as PDF from
-within the campus network, and we also made it available for you on
-Blackboard.
+within the campus network.
 The book uses the term _Design Science_ for what we refer here to as _Research Method for Technology_. We have used this term before, too, but observed that many students (and supervisors) started the seminar with the wrong impression what it is about.
  
 
 :aside: <a href="https://doi.org/10.1007/978-3-662-43839-8"><img width="100px" src="figures/wieringa-book.jpg"/></a><br/>[Access on SpringerLink](https://doi.org/10.1007/978-3-662-43839-8) (from campus network)
+
+
+
+You can also read the book *Teknologivitenskap* from Ketil Stølen (in Norwegian), which is published in [Universitetsforlaget](https://www.universitetsforlaget.no/teknologivitenskap). There is also an English version of the book available from Springer, which you can [download as PDF from within the campus network](https://doi.org/10.1007/978-3-031-25817-6).
+
+
+There is also the book **An Introduction to Design Science** from Paul Johannesson and Erik Perjons,
+which you can [download as PDF from within the campus network](https://doi.org/10.1007/978-3-030-78132-3).
 
 
 In your thesis, you should **not** refer to this seminar when writing about your method. Instead, refer to published literature about research methods, and make sure to refer to the specific choices you made for your thesis. 

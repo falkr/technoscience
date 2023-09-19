@@ -1,48 +1,127 @@
-<html lang="en-US"><head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!doctype html>
+<html lang="en">
 
-<title>Research Method Seminar</title>
-<meta property="og:title" content="Design Science Seminar">
-<meta property="og:locale" content="en_US">
-<meta name="description" content="Design Science Seminar">
-<meta property="og:description" content="Design Science Seminar">
-
-
-<!--<link rel="stylesheet" type="text/css" href="style.css" />-->
-<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic|Source+Code+Pro|Source+Sans+Pro:200,300,400,600,400italic,600italic|Rock+Salt" rel="stylesheet" type="text/css">
-
-
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-
-<link rel="stylesheet" type="text/css" href="assets/style.css" />
-<style type="text/css">div.abstract {
-  font-weight: bold;
-  font-style: italic;
-}
-div.definition p {
-    padding: 10px;
-    background-color: #d9eaf2;
-    border-radius: 5px;
-    border-left: 6px solid #1481b8;
-    font: normal 14px "Source Sans Pro", Menlo, Consolas, Monaco, monospace;
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="generator" content="">
+  <title>Research Method Seminar</title>
+  <link rel="canonical" href="https://edu.iik.ntnu.no">
+  <!-- Bootstrap core CSS -->
+  <link href="assets/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="assets/style-frame.css" rel="stylesheet">
+  <link href="assets/style-fonts.css" rel="stylesheet">
+  <link href="assets/style-code.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/bootstrap-icons.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="assets/anchor.js"></script>
+  <script src="assets/clipboard.min.js"></script>
+  <style>/* === boxes === */
+div.box {
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+  padding: 1rem 1rem 1rem 3.5rem;
 }
 
-div.definition p::before { 
-  content: "Definition: ";
-  font-weight: bold;
-  display: inline;
+div.box>p {
+  margin-bottom: 0px;
 }
+
+div.box>*:first-child::before {
+  font-family: bootstrap-icons !important;
+  font-size: 1.5rem;
+  padding: 0.8rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  display: grid;
+}
+
+div.milestone {
+  background-color: #E3BCDA;
+}
+
+div.milestone>*:first-child::before {
+  content: '\f706';
+  color: #75225E;
+}
+
+div.delivery {
+  background-color: #ffd9ab;
+}
+
+div.delivery>*:first-child::before {
+  content: '\f1be';
+  color: #fc8c03;
+}
+
+div.definition {
+  background-color: #EEE5D5;
+}
+
+div.definition>*:first-child::before {
+  content: '\f3e9';
+  color: #7D705A;
+}
+
+div.guideline {
+  background-color: #fae7e8;
+}
+
+div.guideline>*:first-child::before {
+  content: '\f548';
+  color: #e45460;
+}
+
+div.report {
+  background-color: #D6E5F0;
+}
+
+div.report>*:first-child::before {
+  content: '\f43e';
+  color: #1481b8;
+}
+
+div.warning {
+  background-color: #ffd9ab;
+}
+
+div.warning>*:first-child::before {
+  content: '\f33a';
+  color: #fc8c03;
+}
+
+div.tip {
+  background-color: #E3BCDA;
+}
+
+div.tip>*:first-child::before {
+  content: '\f402';
+  color: #75225E;
+}
+
+div.task {
+  background-color: #fae7e8;
+}
+
+div.task>*:first-child::before {
+  content: '\f5db';
+  color: #e45460;
+}
+
+/* === double === */
 .double {
   column-count: 2;
 }
+
+/* === figure === */
 div.figure {
   padding: 20px 0 20px 0;
   width: 100%;
@@ -54,147 +133,105 @@ div.figurefullwitdth {
   margin-right: -33px;
   width: 100%;
 }
-div.goals ul,
-div.goals ul li {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
 
-div.goals ul {
-  margin: 2em 0;
-}
-
-div.goals ul li {
-  margin: 1em;
-  margin-left: 3em;
-}
-
-div.goals ul li:before {
-  content: '\f26a';
-  font-family: bootstrap-icons !important;
-  font-size:20;
-  float: left;
-  margin-left: -1.5em;
-  color: #1481b8;
-}
-div.guideline p {
-  padding: 10px;
-  background-color: #fae7e8;
-  border-radius: 5px;
-  border-left: 6px solid #e45460;
-  font: normal 14px "Source Sans Pro", Menlo, Consolas, Monaco, monospace;
-}
-
-div.guideline p::before { 
-  content: "Guideline: ";
-  font-weight: bold;
-  display: inline;
-}
-
-div.rat ol {
-  list-style-type: upper-alpha;
-}
-div.task p {
-padding: 10px;
-background-color: #D6E5F0;
-border-radius: 5px;
-border-left: 6px solid #1481b8 
-}
-
-div.task p::before { 
-content: "Task: ";
-font-weight: bold;
-display: inline;
+figcaption {
+  color: #868279;
 }
 
 </style>
-<!--<script src="jquery-1.10.1.min.js"></script>-->
-<script src="assets/script-aside.js"></script>
 </head>
-<body id="top">
 
-<nav class="navbar navbar-expand-md navbar-dark " style="background-color:#666666"#2B65EC"> <!-- fixed-top -->
-	<ul class="nav nav-pills">
-		<li class="nav-item">
-    		<a class="nav-link" href="index.html" style="font-weight: bold">Research Methodology for Technology</a>
-    	</li>
-    	<li class="nav-item">
-    		<a class="nav-link" href="preparation.html">Preparation</a>
-    	</li>
-    	<li class="nav-item">
-    		<a class="nav-link" href="class.html">Class</a>
-    	</li>
-        <!--
-  		<li class="nav-item dropdown">
-    		<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Preparation</a>
-    		<div class="dropdown-menu">
-      			<a class="dropdown-item" href="prep-setup.html">Team Setup</a>
-    		</div>
-  		</li>
-		-->
-	</ul>
-	<div class="navbar-nav flex-row ml-md-auto d-none d-md-flex"></div>
-    <a class="navbar-brand" href="https://ntnu.edu">
-    	<svg width="100" height="30">
-			<image xlink:href="https://innsida.ntnu.no/innsida-theme/images/ntnu-graphics/ntnu_logo_white.svg" 
-      		src="https://innsida.ntnu.no/innsida-theme/images/ntnu-graphics/ntnu_logo_white.png" width="100%" height="100%"></image>
-    	</svg>
-    </a>
-</nav>
+<body>
 
 
-<div class="page">
-    </section>
-    <section class="content">
-<h1>Preparation</h1>
+
+
+
+  <nav class="navbar navbar-expand-lg navbar shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://ntnu.edu" title="NTNU Homepage">
+        <img id="header_logo" alt="NTNU Hjemmeside" width="120"
+          src="https://www.ntnu.no/o/ntnu-theme/images/logo_ntnu.svg" height="23">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+          </svg>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Research Methodology</a>
+          <li class="nav-item">
+              <a class="nav-link" href="preparation.html">Preparation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="class.html">Class</a>
+            </li>
+        </ul>
+        <div class="bg-light border ms-auto"></div>
+        <div>
+          <a class="nav-link" href="schedule.html"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+              height="16" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+              <path
+                d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" />
+              <path
+                d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+            </svg></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container container-max-width">
+    <section class="mt-5 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>Preparation</h1>
 <p>The following is an introduction into the concepts of design science.
 This implies that you need to learn the definitions of some
 terms. Focus in this part on remembering them and understanding what the
 terms mean and how they are distinct. We will go through a series of
 activities to further learn how to use these terms and apply them to
 your own thesis.</p>
-
-<div class="task"><p>This preparation contains <strong>tasks</strong>. To get the full benefit of the
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><div class="task box mt-3 mb-3"><p>This preparation contains <strong>tasks</strong>. To get the full benefit of the
 seminar, you need to fill out the tasks while you read, either on a
 printout of this document or on a separate paper. It is not important
 that you answer the tasks correctly, but that you write down your
 thoughts when the task is given, so you can reflect about how your
 thinking changes over time.</p>
-</div>
-<span name="bfae87"></span><aside name="bfae87"><p>Please feel free to send questions via <a href="mailto:kraemer@ntnu.no">email</a> also during this preparation phase.</p>
-</aside>
-<div class="guideline"><p>This preparation also contains <strong>guidelines</strong> for your thesis.
+</div></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><div class="guideline box mt-3 mb-3"><p>This preparation also contains <strong>guidelines</strong> for your thesis.
 We will discuss them in the seminar.
 They are included already now so you see what will be important.</p>
-</div>
-    </section>
-    <section class="content">
-<h1>Motivation</h1>
+</div></div><aside class="col-md-4 chunk ps-2"><p>Please feel free to send questions via <a href="mailto:kraemer@ntnu.no">email</a> also during this preparation phase.</p>
+</aside></div>
+</section>
+<section class="mt-5 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>Motivation</h1>
 <p><strong>You may feel that talking about scientific methods is complicated,</strong> since we need to introduce some new terms, or use familiar terms in a particular way.
 We will talk about <em>treatments</em> and emphasize the difference between <em>validation</em> and <em>evaluation</em>.
 But this will make writing a thesis <em>easier</em>.
 We give you the terminology as a scaffolding for thinking about your thesis and sharing your thoughts with others.
 Therefore, this seminar may be most useful if you try to apply it to your thesis by working on the suggested tasks.</p>
-
-<h2>The Difference Between What You Do, What You Find Out, and What You Write</h2>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h2>The Difference Between What You Do, What You Find Out, and What You Write</h2>
 <p>We often hear the formulation <em>&quot;I am writing my master thesis.&quot;</em> This
 emphasizes the focus on the tangible product of the thesis, which is the
 thesis report. Given that your final grade is based on the report,
 this is understandable. But focussing primarily on
 the report is also limiting and doesn't help to understand what you actually need
 to do.</p>
-
-<div class="figure">
-<img src="figures/triangle.svg" alt="Difference between what you do, what you find out, and what you write." width="100%"/>
-<span name="figures/triangle.svg">&nbsp;</span>
-<aside name="figures/triangle.svg"><p><p>Difference between what you do, what you find out, and what you write.</p>
-</p></aside>
-</div>
-<span name="aafde1"></span><aside name="aafde1"><p><em>Optional:</em> Having a deep understanding of the concept of <em>knowledge</em> helps when you need to decide what you have to do to acquire it.
-<a href="knowledge.html">We collected a few videos</a> that approach knowledge in various ways.</p>
-</aside>
-<p>The actual <strong>result</strong> of a thesis is <strong>knowledge</strong>, and that implies
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
+    <img src="figures/triangle.svg" class="figure-img img-fluid rounded" alt="Difference between what you do, what you find out, and what you write.">
+</figure></div><aside class="col-md-4 chunk ps-2"><figcaption class="figure-caption">Difference between what you do, what you find out, and what you write.</figcaption></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>The actual <strong>result</strong> of a thesis is <strong>knowledge</strong>, and that implies
 <strong>new</strong> knowledge, and ideally knowledge that turns out to be <strong>useful</strong>.
 The <strong>report</strong> only captures these results, that means,
 presents the new knowledge. In addition, the report documents the
@@ -202,8 +239,10 @@ process how the results were acquired so that they are reproducible. How
 do you get these results, this new knowledge? You do this by the actual
 <strong>work</strong> that goes into the thesis. (Writing the report also constitutes
 <em>work</em>, but of a different kind we mean here.)</p>
-
-<p>What this work is, really depends on the nature of your discipline and
+</div><aside class="col-md-4 chunk ps-2"><p><em>Optional:</em> Having a deep understanding of the concept of <em>knowledge</em> helps when you need to decide what you have to do to acquire it.
+<a href="knowledge.html">We collected a few videos</a> that approach knowledge in various ways.</p>
+</aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>What this work is, really depends on the nature of your discipline and
 subject. Sometimes, knowledge is produced mainly through reading and
 thinking. Sometimes, knowledge is produced by observation and
 experiments. Sometimes, knowledge is produced by creating technology
@@ -214,16 +253,16 @@ you with reflecting what knowledge is and how to acquire it, planning
 your work and making your report more explicit. It helps you to plan and
 perform the necessary work to produce new knowledge within engineering
 disciplines.</p>
-
-<div class="task"><p>A student thinks <em>&quot;I have used a lot of time on these
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><div class="task box mt-3 mb-3"><p>A student thinks <em>&quot;I have used a lot of time on these
 measurements, they should thus also make up a considerable portion of
 the pages of my report.&quot;</em> --- What do you think about this statement?</p>
-</div>
+</div></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><hr class="lines"/>
 <hr class="lines"/>
 <hr class="lines"/>
-<hr class="lines"/>
-<hr class="lines"/>
-<h2>Why is it good to have a method?</h2>
+<hr class="lines"/></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h2>Why is it good to have a method?</h2>
 <p>The aim of research is to acquire new knowledge. For a thesis, we could
 naïvely say that you read about a problem, make some experiments and
 build a prototype and then write about it. So why not just doing it?</p>
@@ -272,22 +311,20 @@ fruitful to begin with, choose the approach most likely to succeed,
 or at least not running blindly into walls.</p>
 </li>
 </ul>
-
-    </section>
-    <section class="content">
-<h1>Natural Science vs. Science for Technology</h1>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+</section>
+<section class="mt-5 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>Natural Science vs. Science for Technology</h1>
 <p>You are probably aware of the general scientific method, which consists
 of a systematic sequence of steps, namely observation, measurement, and
 experiment, and the formulation, testing, and modification of
 hypotheses. This method is used in the natural sciences, which deals
 with explaining natural phenomena. (We give here the impression that the scientific method for natural sciences is clearly defined. There are debates about the details, but for making progress for understanding what we need for research in technology, we are not delving into these details.)</p>
-
-<span name="c9ba92"></span><aside name="c9ba92">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><span name="c9ba92"></span><aside name="c9ba92">
 <a href="https://youtube-nocookie.com/xG3-_tgDE0k"><img width="240" src="https://img.youtube.com/vi/xG3-_tgDE0k/sddefault.jpg"></img></a>
-<p>If you are interested, have a look at this video from Sixty Symbols about the scientific method.</p>
-
-</aside>
-<p>Isn't it possible to apply this general scientific method also to
+</aside></div><aside class="col-md-4 chunk ps-2">If you are interested, have a look at this video from Sixty Symbols about the scientific method.</aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>Isn't it possible to apply this general scientific method also to
 technology? Instead of phenomena created by nature, we try to understand
 phenomena created by humans, that means, we try to understand
 technology. Do we need another framework?</p>
@@ -319,16 +356,16 @@ answering so-called <em>knowledge questions</em>. More on that later.</p>
 <p>So, the differences between natural science and technology make it hard to
 simply apply the general scientific method to a research project dealing
 with technology.</p>
-
-<div class="task"><p>Without reading any further, take your current thesis topic
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><div class="task box mt-3 mb-3"><p>Without reading any further, take your current thesis topic
 and think of it in the framework of natural sciences. Can you write down
 a question that characterizes the knowledge you would like to gain?</p>
-</div>
+</div></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><hr class="lines"/>
 <hr class="lines"/>
 <hr class="lines"/>
-<hr class="lines"/>
-<hr class="lines"/>
-<p>We come back to this question later. Most likely, you have formulated a question in a way that does not really help you in the process further.
+<hr class="lines"/></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>We come back to this question later. Most likely, you have formulated a question in a way that does not really help you in the process further.
 A scientific method for technology helps you to ask <strong>better questions</strong>.</p>
 <!--
 Nevertheless, you can observe that technology researchers formulate
@@ -349,8 +386,8 @@ This is in a stark contrast to the natural sciences, that <em>only</em> want to 
 <p><strong>Artifact:</strong> An artifact can be anything designed and created by
 humans, both as a real, physical object or an abstract concept. Examples
 for artifacts are:</p>
-
-<div class="double"><ul>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><div class="double"><ul>
 <li>Software</li>
 <li>Hardware</li>
 <li>Organizations</li>
@@ -360,20 +397,20 @@ for artifacts are:</p>
 <li>Techniques</li>
 <li>Conceptual Structures</li>
 </ul>
-</div>
-<p><strong>Context:</strong> The problem context for the artifact can be anything that
+</div></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p><strong>Context:</strong> The problem context for the artifact can be anything that
 interacts with the artifact or that has influence on it. Typically the
 problem context for an artifact is not a single context, but consists of
 elements like the following:</p>
-
-<div class="double"><ul>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><div class="double"><ul>
 <li>People</li>
 <li>Values, Desires, Fears</li>
 <li>Goals, Norms, Budgets</li>
 <li>other artifacts, as the ones named above.</li>
 </ul>
-</div>
-<p>The context for one artifact can also be another artifact, for instance
+</div></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>The context for one artifact can also be another artifact, for instance
 when a system interacts with another system, but only one of them is
 under research.</p>
 <p>You may ask why it makes a difference to emphasize that research within
@@ -399,23 +436,21 @@ addressing the problem will make it easier to also find good
 validation mechanisms and focus on them.</p>
 </li>
 </ol>
-
-<div class="guideline"><p>In your work, be aware of artifacts and what the problem
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><div class="guideline box mt-3 mb-3"><p>In your work, be aware of artifacts and what the problem
 is. Do not design an artifact without first considering its problem context
 and how artifact and context interact.</p>
-</div>
-<div class="task"><p>What are possible artifacts for your thesis? What are
+</div></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><div class="task box mt-3 mb-3"><p>What are possible artifacts for your thesis? What are
 examples for elements in the problem context? List some!</p>
-</div>
+</div></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><hr class="lines"/>
 <hr class="lines"/>
 <hr class="lines"/>
-<hr class="lines"/>
-<hr class="lines"/>
-    </section>
-    <section class="content">
-<span name="8f538a"></span><aside name="8f538a"><p>Difference between design problems and knowledge questions. Adapted from (Wieringa 2014).</span></p>
-</aside>
-<h1>Knowledge Questions vs. Design Problems</h1>
+<hr class="lines"/></div><aside class="col-md-4 chunk ps-2"></aside></div>
+</section>
+<section class="mt-5 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>Knowledge Questions vs. Design Problems</h1>
 <p>The core of design science is a separation of two different kind of
 research problems: <strong>design problems</strong> and <strong>knowledge questions</strong>.
 These correspond to the two different activities during research within technology, which are
@@ -452,8 +487,9 @@ specific age group to wear a wristband?</p>
 </tr>
 </tbody>
 </table>
-
-<p>Often, students (and supervisors) are not aware of the distinction and
+</div><aside class="col-md-4 chunk ps-2"><p>Difference between design problems and knowledge questions. Adapted from (Wieringa 2014).</span></p>
+</aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>Often, students (and supervisors) are not aware of the distinction and
 approach a design problem as a knowledge question. Then, instead of
 writing:</p>
 <blockquote>
@@ -489,42 +525,39 @@ which depend on the stakeholder goals.</p>
 <p>Treating what is actually a design problem as a knowledge question does not
 guide us in the right direction and is not helpful.
 Especially the validation and outcome are different.</p>
-
-<div class="guideline"><p>Carefully distinguish between design problems and
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><div class="guideline box mt-3 mb-3"><p>Carefully distinguish between design problems and
 knowledge questions.</p>
-</div>
-<div class="task"><p>Go back to your answer from Task 1 above. Do you see a
+</div></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><div class="task box mt-3 mb-3"><p>Go back to your answer from Task 1 above. Do you see a
 better fit when thinking of your thesis as <em>studying an artifact in a
 problem context</em>, as opposed to a <em>natural phenomena</em>? Replace the
 question from Task 1 with the description of a problem that you want to
 solve by introducing an artifact. Does this describe your thesis better
 than the answer in Task 1?</p>
-</div>
+</div></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><hr class="lines"/>
 <hr class="lines"/>
 <hr class="lines"/>
-<hr class="lines"/>
-<hr class="lines"/>
-<div class="task"><p>List some knowledge questions and some design problems for
+<hr class="lines"/></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><div class="task box mt-3 mb-3"><p>List some knowledge questions and some design problems for
 your thesis. It is sometimes not so obvious what they are, so this may
 be harder than it may appear, and it is okay you try it with a first
 attempt.</p>
-</div>
+</div></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><hr class="lines"/>
 <hr class="lines"/>
 <hr class="lines"/>
-<hr class="lines"/>
-<hr class="lines"/>
-    </section>
-    <section class="content">
-<h1>The Design Cycle</h1>
+<hr class="lines"/></div><aside class="col-md-4 chunk ps-2"></aside></div>
+</section>
+<section class="mt-5 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>The Design Cycle</h1>
 <p>We can now describe a process to design an artifact:</p>
-
-<div class="figure">
-<img src="figures/design-cycle.png" alt="The design cycle. Adapted from (Wieringa 2014)." width="100%"/>
-<span name="figures/design-cycle.png">&nbsp;</span>
-<aside name="figures/design-cycle.png"><p><p>The design cycle. Adapted from (Wieringa 2014).</p>
-</p></aside>
-</div>
-<p>The process is iterative, starting with the problem investigation.</p>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
+    <img src="figures/design-cycle.png" class="figure-img img-fluid rounded" alt="The design cycle. Adapted from (Wieringa 2014).">
+</figure></div><aside class="col-md-4 chunk ps-2"><figcaption class="figure-caption">The design cycle. Adapted from (Wieringa 2014).</figcaption></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>The process is iterative, starting with the problem investigation.</p>
 <ul>
 <li>
 <p><strong>Problem Investigation:</strong> Which problem do we need to solve and
@@ -554,10 +587,10 @@ context. We discuss in the next section why.</p>
 </ul>
 <p>These steps form a cycle, since the validation may reveal more knowledge
 about artifact and context, which motivates another round.</p>
-
-    </section>
-    <section class="content">
-<h1>Evaluation and Validation</h1>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+</section>
+<section class="mt-5 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>Evaluation and Validation</h1>
 <p>By now it should be obvious that it is not enough to just come up with
 an artifact, but that it is necessary that we find out and demonstrate
 how effective this artifact is in solving the problem we designed it
@@ -565,10 +598,10 @@ for. If an artifact doesn't solve the problem, it's useless.
 (Finding out that the artifact does not work as intended does not mean that your thesis failed or imply that you get a bad grade.
 Understanding why something does not work can also be valuable knowledge, that is helpful to create another artifact.)</p>
 <p>Let's first talk about what we call <strong>evaluation</strong>:</p>
-
-<div class="definition"><p><strong>Evaluation</strong> is the investigation of a treatment as applied by stakeholders in the field.</p>
-</div>
-<p>Where we mean by <em>treatment</em> the application of the artifact, the
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><div class="definition box mt-3 mb-3"><p><strong>Evaluation</strong> is the investigation of a treatment as applied by stakeholders in the field.</p>
+</div></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>Where we mean by <em>treatment</em> the application of the artifact, the
 <em>stakeholders</em> are the persons that require a problem solved, and <em>in
 the field</em> means that the artifact is applied in reality, in the way
 (scale, context,...) it is intended.</p>
@@ -584,10 +617,10 @@ development projects in general. Evaluations are hard to do and take
 time.</p>
 <p>So what is the next best thing if an evaluation in reality is not
 possible? That is what we call <strong>validation</strong>:</p>
-
-<div class="definition"><p>The goal of <strong>validation</strong> is to predict how an artifact will interact with its context, without actually observing an implemented artifact in a real-world context.</p>
-</div>
-<p>This is a useful understanding of validation that addresses the
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><div class="definition box mt-3 mb-3"><p>The goal of <strong>validation</strong> is to predict how an artifact will interact with its context, without actually observing an implemented artifact in a real-world context.</p>
+</div></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>This is a useful understanding of validation that addresses the
 practicalities we face in research. It means that you need to find ways
 to predict how a certain artifact would behave in practice. For our 6G
 algorithm example we could for instance:</p>
@@ -611,11 +644,11 @@ interpolate and try to predict or simulate how a real system would
 behave. Finding such relevant validation steps can require a lot of work
 and creativity, and is often even more elaborate than designing the
 artifact in the first place.</p>
-
-<div class="guideline"><p>Think early in the process about how to validate
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><div class="guideline box mt-3 mb-3"><p>Think early in the process about how to validate
 artifacts, that means at least before you design the artifact itself.</p>
-</div>
-<p><strong>Missing Validations:</strong> Some students (and supervisors) ignore the
+</div></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p><strong>Missing Validations:</strong> Some students (and supervisors) ignore the
 validation part, and rush too quickly towards designing the artifact. In
 some cases this may be because the actual validation is implied by the
 habits in the discipline, but sometimes it is an oversight or neglect.
@@ -632,53 +665,96 @@ all? Maybe writing the code wasn't the problem in the first place, but
 some other properties of the algorithm that should be validated without
 any written code? This is why it is so important to think about the
 validation before any effort is spent on creating artifacts.</p>
-
-    </section>
-    <section class="content">
-<h1>That's it for now.</h1>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+</section>
+<section class="mt-5 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>That's it for now.</h1>
 <p>We have now discussed some of the most important elements in research methodology within technology. Don't worry if you feel a bit confused and have troubles
 distinguishing the terms from each other. Go back and read the text
 again until you remember the main concepts. We will apply the concepts
 in some exercises so that you can use them for your thesis.</p>
 <p>See you in the seminar.</p>
-
-<span name="a6d663"></span><aside name="a6d663"><p><a href="https://doi.org/10.1007/978-3-662-43839-8"><img width="100px" src="figures/wieringa-book.jpg"/></a><br/><a href="https://doi.org/10.1007/978-3-662-43839-8">Access on SpringerLink</a> (from campus network)</p>
-</aside>
-<h2>Optional Further Reading</h2>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h2>Optional Further Reading</h2>
 <p>What you read now is sufficient for the seminar. After that, you should
 continue reading on research methods depending on which parts you need to
 elaborate further.</p>
 <p>Much of this introduction you just read is based on
 the book of Roel Wieringa, <em>Design Science Methodology for Information
 Systems and Software Engineering</em>. You can access this book as PDF from
-within the campus network, and we also made it available for you on
-Blackboard.
+within the campus network.
 The book uses the term <em>Design Science</em> for what we refer here to as <em>Research Method for Technology</em>. We have used this term before, too, but observed that many students (and supervisors) started the seminar with the wrong impression what it is about.</p>
+</div><aside class="col-md-4 chunk ps-2"><p><a href="https://doi.org/10.1007/978-3-662-43839-8"><img width="100px" src="figures/wieringa-book.jpg"/></a><br/><a href="https://doi.org/10.1007/978-3-662-43839-8">Access on SpringerLink</a> (from campus network)</p>
+</aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>You can also read the book <em>Teknologivitenskap</em> from Ketil Stølen (in Norwegian), which is published in <a href="https://www.universitetsforlaget.no/teknologivitenskap">Universitetsforlaget</a>. There is also an English version of the book available from Springer, which you can <a href="https://doi.org/10.1007/978-3-031-25817-6">download as PDF from within the campus network</a>.</p>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>There is also the book <strong>An Introduction to Design Science</strong> from Paul Johannesson and Erik Perjons,
+which you can <a href="https://doi.org/10.1007/978-3-030-78132-3">download as PDF from within the campus network</a>.</p>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>In your thesis, you should <strong>not</strong> refer to this seminar when writing about your method. Instead, refer to published literature about research methods, and make sure to refer to the specific choices you made for your thesis.</p>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+</section>
+  </main>
 
-<p>In your thesis, you should <strong>not</strong> refer to this seminar when writing about your method. Instead, refer to published literature about research methods, and make sure to refer to the specific choices you made for your thesis.</p>
-
-    </section>
-</div>
 
 
-<footer></footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
-<script>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-bottom" style="background-color: #555555">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.ntnu.no/informasjonskapsler">Om informasjonskapsler</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.ntnu.no/personvern">Personvern</a>
+          </li>
+        </ul>
+        <div class="bg-light ms-auto border-0"></div>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+              aria-controls="offcanvasExample">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-pencil-square" viewBox="0 0 16 16">
+                <path
+                  d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                <path fill-rule="evenodd"
+                  d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasExample"
+    aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Edit this page</h5>
+    </div>
+    <div class="offcanvas-body">
+      <ul>
+        <li>This site is hosted on <a href="https://github.com/falkr/ttm4175">Github</a></li>
+        <li>The source is written in <a href="supermark/index.html">Supermark</a> syntax</li>
+        <li>To edit this page, make a commit to <a
+            href="https://github.com/falkr/ttm4175/tree/master/pages/preparation.md">this file</a></li>
+      </ul>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script>
     anchors.add('h1').add('h2').add('h3');
     anchors.options.visible = 'always';
-</script>
-<script>
-  
-
-
-
-
-
-
+    var clipboard = new ClipboardJS('.copy-button');
+  </script>
+  <script>
 
 
 
 
 </script>
 </body>
+
 </html>
