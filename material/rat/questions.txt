@@ -1,0 +1,70 @@
+---
+title: Research Methodology for Technology
+---
+
+
+#
+
+Which of the following is the best definition of a research methodology for technology?
+
+{1} true: The design and investigation of artifacts in context.
+{2} fake: The design and investigation of interactions between artifacts and their context.
+{3} fake: The scientific investigation of anything designed by humans.
+{4} fake: A scientific method for engineers. 
+
+
+#
+
+What is a difference between natural science and research within technology?
+
+{1} true: Technology aims to change the world, natural science tries to understand it.
+{2} fake: Technology is for engineers, natural science for scientists.
+{3} fake: Natural science does not cover implementation.
+{4} fake: Scientific research explores technology as if it was a natural phenomena.
+
+#
+
+Which of the following is not an artifact as defined in the preparation?
+
+{1} true: An electron
+{2} fake: A Python program 
+{3} fake: An electric circuit
+{4} fake: A standard for electromagnetic protection of electronic circuits
+
+
+#
+
+What is the difference between the engineering cycle and the design cycle?
+
+{1} true: The engineering cycle also includes the actual implementation of the artifact in the real world.
+{2} fake: The engineering cycle has the same steps as the design cycle, but with less scientific rigor.
+{3} fake: The design cycle aims at evaluating an artifact in context.
+{4} fake: The design cycle extends the engineering cycle.
+
+
+#
+
+What is another term for \emph{treatment}?
+
+{1} true: solution
+{2} fake: artifact
+{3} fake: result
+{4} fake: system implementation
+
+
+# 
+
+What is the difference between \emph{evaluation} and \emph{validation}?
+
+{1} true: Evaluation requires that we observe the artifact in its real-world context, the validation does not.
+{2} fake: Evaluation is the design-science equivalent to what validation is in natural science.
+{3} fake: Evaluation includes the implementation phase, validation does not.
+{4} fake: They only differ in extend and effort spent. Evaluation is more elaborate than validation.
+
+
+# What are differences between knowledge questions and design problems?
+
+{1} true: Knowledge questions have a single answer.
+{2} fake: Design problems have a single artifact as result.
+{3} fake: Design problems are evaluated by truth.
+{4} fake: Knowledge questions are evaluated by the utility to the stakeholder.
